@@ -1,0 +1,4 @@
+# قائمة مودات اللاعب — معرّف لكل سطر، وما بعد # يُتجاهل
+weathermod
+zoomplus
+fabric-api

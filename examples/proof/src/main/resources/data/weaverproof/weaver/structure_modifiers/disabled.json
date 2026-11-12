@@ -1,0 +1,1 @@
+{ "type": "weaver:add_biomes", "enabled": false, "structures": "minecraft:igloo", "biomes": "minecraft:jungle" }

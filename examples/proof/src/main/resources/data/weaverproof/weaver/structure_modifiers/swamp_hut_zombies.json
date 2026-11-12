@@ -1,0 +1,6 @@
+{
+  "type": "weaver:add_spawns",
+  "structures": "minecraft:swamp_hut",
+  "category": "monster",
+  "spawners": [{"type": "minecraft:zombie", "count": {"type": "minecraft:uniform", "min_inclusive": 1, "max_inclusive": 2}, "weight": 5}]
+}

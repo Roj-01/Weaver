@@ -1,0 +1,10 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "WEAVERCLIENTPROOF_STEADY",
+      "constructor": "(ZZ)V",
+      "parameters": {"class": "net/weaver/clientproof/ClientProofEnums", "method": "steady"}
+    }
+  ]
+}

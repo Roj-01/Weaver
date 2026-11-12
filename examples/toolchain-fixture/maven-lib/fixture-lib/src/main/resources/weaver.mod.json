@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "fixture-lib",
+  "name": "Fixture Library",
+  "version": "1.0.0",
+  "mainClass": "com.weaver.fixture.lib.Library",
+  "minecraft": "26.3",
+  "side": "server"
+}

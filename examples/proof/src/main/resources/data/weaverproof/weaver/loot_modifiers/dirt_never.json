@@ -1,0 +1,17 @@
+{
+  "type": "weaver:add_items",
+  "tables": [
+    "minecraft:blocks/dirt"
+  ],
+  "conditions": [
+    {
+      "type": "minecraft:random_chance",
+      "chance": 0
+    }
+  ],
+  "items": [
+    {
+      "id": "minecraft:emerald"
+    }
+  ]
+}

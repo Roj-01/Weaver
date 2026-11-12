@@ -1,0 +1,46 @@
+---- Minecraft Crash Report ----
+
+// Why did you do that?
+
+Time: 2026-10-17 14:22:01
+Description: Exception while ticking world
+
+java.lang.RuntimeException: Exception in world tick event handler
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:719)
+	at com.example.zoomplus.event.ZoomEvents.beforeWorldTick(ZoomEvents.java:33)
+	at net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents$1.onStartTick(ServerTickEvents.java:61)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:915)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:702)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:203)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.Level.getWeatherState()" because "com.example.weathermod.tick.WeatherTickHandler.level" is null
+	at com.example.weathermod.tick.WeatherTickHandler.onWorldTick(WeatherTickHandler.java:87)
+	at com.example.weathermod.tick.WeatherTickHandler.onWorldTick(WeatherTickHandler.java:41)
+	at net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents$1.onStartTick(ServerTickEvents.java:58)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:712)
+	... 8 more
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.example.weathermod.tick.WeatherTickHandler.onWorldTick(WeatherTickHandler.java:87)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:712)
+
+-- Affected level --
+Level name: New World
+All players: 1 total; [ServerPlayer['Roj'/1, l='New World', x=8.5, y=64.0, z=-12.3]]
+Chunk stats: ServerChunkCache: 625 Drop: 0
+
+-- System Details --
+Details:
+	Minecraft Version: 26.3
+	Java Version: 26.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM
+	Memory: 1 GB / 2 GB
+	Fabric Loader: 0.17.1
+	Fabric API: 0.140.2+26.3
+
+-- Mods --
+	Mod List:
+		weathermod 1.2.0
+		zoomplus 0.4.1

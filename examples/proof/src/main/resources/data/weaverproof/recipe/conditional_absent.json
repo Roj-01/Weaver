@@ -1,0 +1,6 @@
+{
+  "weaver:conditions": [{"type": "weaver:mod_loaded", "modid": "nonexistentmod"}],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": ["minecraft:diamond", "minecraft:diamond"],
+  "result": {"count": 1, "id": "minecraft:emerald"}
+}

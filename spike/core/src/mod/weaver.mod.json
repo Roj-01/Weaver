@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "id": "proof",
+  "name": "Proof",
+  "version": "1.0.0",
+  "mainClass": "net.example.mod.ProofMod",
+  "minecraft": "26.3",
+  "side": "both",
+  "mixins": [
+    "proof.mixins.json"
+  ],
+  "accessTransformers": [
+    "META-INF/accesstransformer.cfg"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "weavercompatsuite",
+  "name": "Weaver Compatibility Suite",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.compatsuite.CompatSuiteMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

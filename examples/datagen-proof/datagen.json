@@ -1,0 +1,73 @@
+{
+  "namespace": "datagenproof",
+  "description": "Weaver datagen proof",
+  "blocks": [
+    {
+      "id": "gem_block",
+      "name": "Gem Block"
+    }
+  ],
+  "items": [
+    {
+      "id": "ruby",
+      "name": "Ruby"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "gem_block",
+      "type": "shaped",
+      "result": "datagenproof:gem_block",
+      "pattern": ["RRR", "RRR", "RRR"],
+      "key": {
+        "R": "datagenproof:ruby"
+      },
+      "category": "building"
+    }
+  ],
+  "advancements": [
+    {
+      "id": "root",
+      "title": "Gem Hunter",
+      "description": "Find a ruby",
+      "icon": "datagenproof:ruby",
+      "frame": "task",
+      "background": "minecraft:gui/advancements/backgrounds/stone"
+    }
+  ],
+  "registries": [
+    {
+      "id": "datagenproof:gems",
+      "entries": [
+        {
+          "id": "ruby",
+          "data": {
+            "color": "red",
+            "hardness": 7
+          }
+        },
+        {
+          "id": "sapphire",
+          "data": {
+            "color": "blue",
+            "hardness": 9
+          }
+        }
+      ]
+    }
+  ],
+  "tags": {
+    "block": {
+      "gem_blocks": ["datagenproof:gem_block"]
+    },
+    "item": {
+      "gems": ["datagenproof:ruby"]
+    },
+    "datagenproof:gems": {
+      "shiny": {
+        "values": ["datagenproof:ruby", "datagenproof:sapphire"],
+        "priority": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{ "type": "weaver:remove_biomes", "structures": "minecraft:desert_pyramid", "biomes": ["minecraft:desert"] }

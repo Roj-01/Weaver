@@ -1,0 +1,10 @@
+{
+  "values": {
+    "#minecraft:logs": 4,
+    "minecraft:diamond": 200,
+    "minecraft:emerald": 50,
+    "minecraft:stick": 1,
+    "minecraft:not_an_item": 3,
+    "minecraft:apple": "not a number"
+  }
+}

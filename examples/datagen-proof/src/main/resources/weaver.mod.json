@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "datagenproof",
+  "name": "Weaver Datagen Proof",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.datagenproof.DatagenProofMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

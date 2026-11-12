@@ -1,0 +1,24 @@
+Libraries in weaver\agent\lib
+=============================
+
+Weaver itself (api, api-game, core, mixin, nf) is under the GNU Lesser
+General Public License v2.1 (LGPL-2.1-only) (see LICENSE and
+README-LICENSE.md). It ships these third-party libraries unchanged:
+
+Library                         License
+------------------------------  ---------------------------
+ASM (asm, analysis, commons,    BSD 3-Clause
+  tree, util) 9.11.1            https://asm.ow2.io/license.html
+Sponge Mixin 0.17.4             MIT
+                                https://github.com/FabricMC/Mixin
+MixinExtras 0.5.5               MIT
+                                https://github.com/LlamaLad7/MixinExtras
+Gson 2.14.0                     Apache License 2.0
+Guava 33.7.2, failureaccess,    Apache License 2.0
+  listenablefuture
+Error Prone annotations         Apache License 2.0
+J2ObjC annotations              Apache License 2.0
+JSpecify 1.0.1                  Apache License 2.0
+
+Minecraft is not included. get-game.ps1 downloads it from Mojang under the
+Minecraft EULA (https://www.minecraft.net/eula).

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "weaverpatchedproof",
+  "name": "Weaver Patched Proof",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.patchedproof.PatchedProofMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

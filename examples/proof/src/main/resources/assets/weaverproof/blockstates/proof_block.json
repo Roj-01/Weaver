@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "weaverproof:block/proof_block"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "weaver:replace_items",
+  "tables": [
+    "minecraft:blocks/stone"
+  ],
+  "from": "minecraft:cobblestone",
+  "to": "minecraft:mossy_cobblestone"
+}

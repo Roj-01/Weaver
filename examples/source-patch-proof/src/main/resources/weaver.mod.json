@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "weaversourceproof",
+  "name": "Weaver Source Patch Proof",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.sourceproof.SourcePatchProofMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

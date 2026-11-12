@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "weavermp",
+  "name": "Weaver Multiplayer Test",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.mptest.MultiplayerTestMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

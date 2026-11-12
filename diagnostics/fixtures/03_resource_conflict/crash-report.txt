@@ -1,0 +1,38 @@
+---- Minecraft Crash Report ----
+
+// Ooh. Shiny.
+
+Time: 2026-10-17 16:31:09
+Description: Registering items
+
+java.lang.IllegalStateException: Duplicate registry entry: deepcore:ruby_ore (already registered in minecraft:item)
+	at net.minecraft.core.Registry.register(Registry.java:850)
+	at com.example.deepcore.registry.CoreItems.register(CoreItems.java:77)
+	at com.example.deepcore.registry.CoreItems.registerAll(CoreItems.java:39)
+	at com.example.deepcore.DeepCoreMod.onInitialize(DeepCoreMod.java:58)
+	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke0(EntrypointUtils.java:40)
+	at net.fabricmc.loader.impl.entrypoint.EntrypointUtils.invoke(EntrypointUtils.java:57)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: deepcore:Ruby Ore
+	at net.minecraft.resources.ResourceLocation.validatePath(ResourceLocation.java:142)
+	at net.minecraft.resources.ResourceLocation.<init>(ResourceLocation.java:48)
+	at com.example.deepcore.registry.CoreRegistry.id(CoreRegistry.java:31)
+	at com.example.deepcore.registry.CoreItems.register(CoreItems.java:74)
+	at org.example.pathlib.util.PathNormalizer.normalize(PathNormalizer.java:64)
+	... 4 more
+
+-- Registry conflicts --
+	deepcore:ruby_ore — requested by 2 sources (deepcore:ore_drops, deepcore:crafting)
+	deepcore:ruby_ore_slab — collides with deepcore:ruby_ore material group
+
+-- System Details --
+Details:
+	Minecraft Version: 26.3
+	Fabric Loader: 0.17.1
+	Java Version: 26.0.1
+
+-- Mods --
+	Mod List:
+		deepcore 0.9.3
+		pathlib 1.1.0

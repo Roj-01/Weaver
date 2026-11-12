@@ -1,0 +1,268 @@
+event	sites	first_site	status	weaver_event
+AddClientReloadListenersEvent	1	client.Minecraft	API features	
+AddServerReloadListenersEvent	1	server.ReloadableServerResources	API features	
+BuildCreativeModeTabContentsEvent	1	world.item.CreativeModeTab	API features	
+DefaultDataComponentsBoundEvent	2	client.multiplayer.RegistryDataCollector	API features	
+EntityRenderersEvent.CreateSkullModels	1	client.Minecraft	API features	
+InitializeClientRegistriesEvent	1	client.data.Main	API features	
+ModMismatchEvent	1	world.level.storage.LevelStorageSource	API features	
+ModelEvent.BakingCompleted	1	client.resources.model.ModelManager	API features	
+ModelEvent.ModifyBakingResult	1	client.resources.model.ModelManager	API features	
+RegisterFeatureRenderersEvent	1	client.renderer.feature.FeatureRenderDispatcher	API features	
+RegisterFluidModelsEvent	1	client.renderer.block.FluidStateModelSet	API features	
+RegisterParticleProvidersEvent	1	client.Minecraft	API features	
+RegisterPictureInPictureRenderersEvent	1	client.renderer.GameRenderer	API features	
+RegisterRenderStateModifiersEvent	1	client.Minecraft	API features	
+RegisterStructureConversionsEvent	1	world.entity.monster.Enderman	API features	
+RegisterTextureAtlasesEvent	1	client.resources.model.sprite.AtlasManager	API features	
+TextureAtlasStitchedEvent	1	client.renderer.texture.TextureAtlas	API features	
+AlterGroundEvent	1	world.level.levelgen.feature.treedecorators.AlterGroundDecorator	batch 2: blocks and world	
+BlockDropsEvent	1	world.level.block.Block	batch 2: blocks and world	
+BlockEvent.FarmlandTrampleEvent	1	world.level.block.FarmlandBlock	batch 2: blocks and world	
+BlockEvent.FluidPlaceBlockEvent	1	world.level.material.LavaFluid	batch 2: blocks and world	
+BlockEvent.PortalSpawnEvent	1	world.level.block.BaseFireBlock	batch 2: blocks and world	
+BlockGrowFeatureEvent	3	world.level.block.MushroomBlock	batch 2: blocks and world	
+BonemealEvent	1	world.item.BoneMealItem	batch 2: blocks and world	
+CreateFluidSourceEvent	1	world.level.material.FlowingFluid	batch 2: blocks and world	
+CropGrowEvent.Post	10	world.level.block.BambooStalkBlock	batch 2: blocks and world	
+CropGrowEvent.Pre	10	world.level.block.BambooStalkBlock	batch 2: blocks and world	
+EnchantedBlockLootEvent	2	world.level.storage.loot.functions.ApplyBonusCount	batch 2: blocks and world	
+ExplosionEvent.Detonate	1	world.level.ServerExplosion	batch 2: blocks and world	
+ExplosionKnockbackEvent	1	world.level.ServerExplosion	batch 2: blocks and world	
+NeighborNotifyEvent	3	server.level.ServerLevel	batch 2: blocks and world	
+NoteBlockEvent.Change	1	world.level.block.NoteBlock	batch 2: blocks and world	
+PistonEvent.Post	1	world.level.block.piston.PistonBaseBlock	batch 2: blocks and world	
+PistonEvent.Pre	1	world.level.block.piston.PistonBaseBlock	batch 2: blocks and world	
+PotionBrewEvent.Post	1	world.level.block.entity.BrewingStandBlockEntity	batch 2: blocks and world	
+PotionBrewEvent.Pre	1	world.level.block.entity.BrewingStandBlockEntity	batch 2: blocks and world	
+ArmorHurtEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+ArrowLooseEvent	2	world.item.BowItem	batch 3: entities and combat	
+ArrowNockEvent	1	world.item.BowItem	batch 3: entities and combat	
+CriticalHitEvent	1	world.entity.player.Player	batch 3: entities and combat	
+EffectParticleModificationEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+EnchantedEntityLootEvent	2	world.level.storage.loot.functions.EnchantedCountIncreaseFunction	batch 3: entities and combat	
+EndermanAngerEvent	1	world.entity.monster.Enderman	batch 3: entities and combat	
+EntityEvent.EnteringSection	2	world.level.entity.PersistentEntitySectionManager	batch 3: entities and combat	
+EntityEvent.EntityConstructing	1	world.entity.Entity	batch 3: entities and combat	
+EntityEvent.Size	1	world.entity.Entity	batch 3: entities and combat	
+EntityInvulnerabilityCheckEvent	1	world.entity.Entity	batch 3: entities and combat	
+EntityMobGriefingEvent	22	server.level.ServerLevel	batch 3: entities and combat	
+EntityTeleportEvent.EnderEntity	2	world.entity.LivingEntity	batch 3: entities and combat	
+EntityTeleportEvent.EnderPearl	1	world.entity.projectile.throwableitemprojectile.ThrownEnderpearl	batch 3: entities and combat	
+EntityTeleportEvent.ItemConsumption	1	world.entity.LivingEntity	batch 3: entities and combat	
+EntityTeleportEvent.SpreadPlayersCommand	1	server.commands.SpreadPlayersCommand	batch 3: entities and combat	
+EntityTravelToDimensionEvent	2	server.level.ServerPlayer	batch 3: entities and combat	
+FinalizeSpawnEvent	2	world.level.BaseSpawner	batch 3: entities and combat	
+GetEquipmentDropChanceEvent	1	world.item.enchantment.EnchantmentHelper	batch 3: entities and combat	
+LivingBreatheEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingChangeTargetEvent	2	world.entity.Mob	batch 3: entities and combat	
+LivingConversionEvent.Post	9	world.entity.ConversionTracker	batch 3: entities and combat	
+LivingConversionEvent.Pre	9	world.entity.ConversionTracker	batch 3: entities and combat	
+LivingDamageEvent.Post	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingDamageEvent.Pre	2	world.entity.LivingEntity	batch 3: entities and combat	
+LivingDestroyBlockEvent	1	world.entity.boss.wither.WitherBoss	batch 3: entities and combat	
+LivingDropsEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingDrownEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingEntityUseItemEvent.Start	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingEntityUseItemEvent.Tick	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingEquipmentChangeEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingEvent.LivingVisibilityEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingGetProjectileEvent	3	world.entity.LivingEntity	batch 3: entities and combat	
+LivingShieldBlockEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+LivingSwapItemsEvent.Hands	2	server.network.ServerGamePacketListenerImpl	batch 3: entities and combat	
+LivingUseTotemEvent	1	world.entity.LivingEntity	batch 3: entities and combat	
+MobDespawnEvent	2	world.entity.Mob	batch 3: entities and combat	
+MobEffectEvent.Expired	1	world.entity.LivingEntity	batch 3: entities and combat	
+MobSplitEvent	1	world.entity.monster.cubemob.AbstractCubeMob	batch 3: entities and combat	
+ProjectileImpactEvent	7	world.entity.projectile.FireworkRocketEntity	batch 3: entities and combat	
+SpawnClusterSizeEvent	1	world.level.NaturalSpawner	batch 3: entities and combat	
+SweepAttackEvent	1	world.entity.player.Player	batch 3: entities and combat	
+XpOrbTargetingEvent	1	world.entity.ExperienceOrb	batch 3: entities and combat	
+AnvilCraftEvent.Post	1	world.inventory.AnvilMenu	batch 4: players and items	
+AnvilCraftEvent.Pre	1	world.inventory.AnvilMenu	batch 4: players and items	
+CanContinueSleepingEvent	2	world.entity.LivingEntity	batch 4: players and items	
+CanPlayerSleepEvent	1	server.level.ServerPlayer	batch 4: players and items	
+GrindstoneEvent.OnPlaceItem	1	world.inventory.GrindstoneMenu	batch 4: players and items	
+GrindstoneEvent.OnTakeItem	1	world.inventory.GrindstoneMenu	batch 4: players and items	
+ItemEntityPickupEvent.Post	1	world.entity.item.ItemEntity	batch 4: players and items	
+ItemExpireEvent	1	world.entity.item.ItemEntity	batch 4: players and items	
+ItemStackedOnOtherEvent	1	world.inventory.AbstractContainerMenu	batch 4: players and items	
+PermissionsChangedEvent	1	server.players.PlayerList	batch 4: players and items	
+PlayerBrewedPotionEvent	1	world.inventory.BrewingStandMenu	batch 4: players and items	
+PlayerEvent.BreakSpeed	1	world.entity.player.Player	batch 4: players and items	
+PlayerEvent.HarvestCheck	2	world.entity.player.Player	batch 4: players and items	
+PlayerEvent.ItemSmithedEvent	1	world.inventory.SmithingMenu	batch 4: players and items	
+PlayerEvent.LoadFromFile	1	server.network.config.PrepareSpawnTask	batch 4: players and items	
+PlayerEvent.NameFormat	1	world.entity.player.Player	batch 4: players and items	
+PlayerEvent.SaveToFile	1	world.level.storage.PlayerDataStorage	batch 4: players and items	
+PlayerEvent.StartTracking	1	server.level.ServerEntity	batch 4: players and items	
+PlayerEvent.StopTracking	1	server.level.ServerEntity	batch 4: players and items	
+PlayerEvent.TabListNameFormat	1	server.level.ServerPlayer	batch 4: players and items	
+PlayerFlyableFallEvent	1	world.entity.player.Player	batch 4: players and items	
+PlayerSetSpawnEvent	1	server.level.ServerPlayer	batch 4: players and items	
+PlayerSpawnPhantomsEvent	1	world.level.levelgen.PhantomSpawner	batch 4: players and items	
+PlayerSwitchHotbarSlotEvent.Post	1	server.network.ServerGamePacketListenerImpl	batch 4: players and items	
+PlayerSwitchHotbarSlotEvent.Pre	1	server.network.ServerGamePacketListenerImpl	batch 4: players and items	
+StatAwardEvent	1	stats.StatsCounter	batch 4: players and items	
+TradeWithVillagerEvent	1	world.entity.npc.villager.AbstractVillager	batch 4: players and items	
+UseItemOnBlockEvent	2	world.item.ItemStack	batch 4: players and items	
+ChunkDataEvent.Load	1	server.level.ChunkMap	batch 5: server, levels, data	
+ChunkDataEvent.Save	1	server.level.ChunkMap	batch 5: server, levels, data	
+ChunkTicketLevelUpdatedEvent	1	server.level.ChunkMap	batch 5: server, levels, data	
+ChunkWatchEvent.Sent	1	server.network.PlayerChunkSender	batch 5: server, levels, data	
+ChunkWatchEvent.UnWatch	1	server.level.ChunkMap	batch 5: server, levels, data	
+ChunkWatchEvent.Watch	1	server.level.ChunkMap	batch 5: server, levels, data	
+CustomClickActionEvent	1	server.MinecraftServer	batch 5: server, levels, data	
+EnchantmentLevelSetEvent	1	world.inventory.EnchantmentMenu	batch 5: server, levels, data	
+GameRuleChangedEvent	1	server.MinecraftServer	batch 5: server, levels, data	
+LevelEvent.CreateSpawnPosition	1	server.MinecraftServer	batch 5: server, levels, data	
+LevelEvent.PotentialSpawns	1	world.level.NaturalSpawner	batch 5: server, levels, data	
+ModifyCustomSpawnersEvent	1	server.level.ServerLevel	batch 5: server, levels, data	
+OnDatapackSyncEvent	1	server.players.PlayerList	batch 5: server, levels, data	
+SleepFinishedTimeEvent	1	server.level.ServerLevel	batch 5: server, levels, data	
+TagsUpdatedEvent.ServerDataLoad	1	server.ReloadableServerResources	batch 5: server, levels, data	
+VanillaGameEvent	1	server.level.ServerLevel	batch 5: server, levels, data	
+VillageSiegeEvent	1	world.entity.ai.village.VillageSiege	batch 5: server, levels, data	
+AddDebugSubscriptionFlagsEvent	1	client.multiplayer.ClientDebugSubscriber	batch 6: client	
+AddSectionGeometryEvent	1	client.renderer.extract.LevelExtractor	batch 6: client	
+CalculateDetachedCameraDistanceEvent	1	client.Camera	batch 6: client	
+CalculatePlayerTurnEvent	1	client.MouseHandler	batch 6: client	
+ClientChatEvent	1	client.multiplayer.ClientPacketListener	batch 6: client	
+ClientChatReceivedEvent	1	client.multiplayer.chat.ChatListener	batch 6: client	
+ClientChatReceivedEvent.Player	1	client.multiplayer.chat.ChatListener	batch 6: client	
+ClientChatReceivedEvent.System	1	client.multiplayer.chat.ChatListener	batch 6: client	
+ClientInformationUpdatedEvent	1	server.network.ServerGamePacketListenerImpl	batch 6: client	
+ClientPauseChangeEvent.Post	1	client.Minecraft	batch 6: client	
+ClientPauseChangeEvent.Pre	1	client.Minecraft	batch 6: client	
+ClientPlayerChangeGameTypeEvent	1	client.multiplayer.PlayerInfo	batch 6: client	
+ClientPlayerNetworkEvent.Clone	1	client.multiplayer.ClientPacketListener	batch 6: client	
+ClientPlayerNetworkEvent.LoggingIn	1	client.multiplayer.ClientPacketListener	batch 6: client	
+ClientPlayerNetworkEvent.LoggingOut	1	client.Minecraft	batch 6: client	
+ComputeFovModifierEvent	1	client.player.AbstractClientPlayer	batch 6: client	
+ConfigureMainRenderTargetEvent	1	client.renderer.GameRenderer	batch 6: client	
+CustomizeGuiOverlayEvent.BossEventProgress	1	client.gui.components.BossHealthOverlay	batch 6: client	
+DifficultyChangeEvent	1	client.multiplayer.ClientLevel	batch 6: client	
+ExtractBlockScreenEffectEvent	1	client.renderer.extract.LevelExtractor	batch 6: client	
+ExtractLevelRenderStateEvent	1	client.renderer.extract.LevelExtractor	batch 6: client	
+FlipFrameEvent	1	client.Minecraft	batch 6: client	
+FrameGraphSetupEvent	1	client.renderer.LevelRenderer	batch 6: client	
+GameShuttingDownEvent	2	client.Minecraft	batch 6: client	
+GatherEffectScreenTooltipsEvent	1	client.gui.screens.inventory.EffectsInInventory	batch 6: client	
+InputEvent.InteractionKeyMappingTriggered	1	client.Minecraft	batch 6: client	
+InputEvent.Key	1	client.KeyboardHandler	batch 6: client	
+InputEvent.MouseScrollingEvent	1	client.MouseHandler	batch 6: client	
+MovementInputUpdateEvent	1	client.player.LocalPlayer	batch 6: client	
+PlayLevelSoundEvent.AtEntity	3	client.multiplayer.ClientLevel	batch 6: client	
+PlayLevelSoundEvent.AtPosition	2	client.multiplayer.ClientLevel	batch 6: client	
+PlaySoundEvent	1	client.sounds.SoundEngine	batch 6: client	
+PlaySoundSourceEvent	1	client.sounds.SoundEngine	batch 6: client	
+PlayStreamingSourceEvent	1	client.sounds.SoundEngine	batch 6: client	
+PlayerDestroyItemEvent	6	client.multiplayer.MultiPlayerGameMode	batch 6: client	
+PlayerHeartTypeEvent	1	client.gui.Hud	batch 6: client	
+PlayerInteractEvent.LeftClickBlock	3	client.multiplayer.MultiPlayerGameMode	batch 6: client	
+PlayerInteractEvent.LeftClickEmpty	1	client.Minecraft	batch 6: client	
+PlayerInteractEvent.RightClickEmpty	1	client.Minecraft	batch 6: client	
+PrepareRenderBuffersEvent	1	client.renderer.LevelRenderer	batch 6: client	
+RenderArmEvent	1	client.renderer.FirstPersonHandsAndItemsRenderer	batch 6: client	
+RenderFrameEvent.Post	1	client.Minecraft	batch 6: client	
+RenderFrameEvent.Pre	1	client.Minecraft	batch 6: client	
+RenderItemInFrameEvent	1	client.renderer.entity.ItemFrameRenderer	batch 6: client	
+RenderLevelStageEvent.AfterLevel	1	client.renderer.GameRenderer	batch 6: client	
+RenderLevelStageEvent.AfterOpaqueBlocks	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.AfterOpaqueFeatures	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.AfterSky	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.AfterTranslucentBlocks	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.AfterTranslucentFeatures	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.AfterTranslucentParticles	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.AfterWeather	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLevelStageEvent.OitTranslucent	1	client.renderer.LevelRenderer	batch 6: client	
+RenderLivingEvent.Post	1	client.renderer.entity.LivingEntityRenderer	batch 6: client	
+RenderLivingEvent.Pre	1	client.renderer.entity.LivingEntityRenderer	batch 6: client	
+RenderPlayerEvent.Post	1	client.renderer.entity.player.AvatarRenderer	batch 6: client	
+RenderPlayerEvent.Pre	1	client.renderer.entity.player.AvatarRenderer	batch 6: client	
+RenderTooltipEvent.GatherComponents	1	client.gui.GuiGraphicsExtractor	batch 6: client	
+RenderTooltipEvent.Pre	1	client.gui.GuiGraphicsExtractor	batch 6: client	
+RenderTooltipEvent.Texture	1	client.gui.GuiGraphicsExtractor	batch 6: client	
+ScreenEvent.Init.Post	1	client.gui.screens.Screen	batch 6: client	
+ScreenEvent.Init.Pre	1	client.gui.screens.Screen	batch 6: client	
+ScreenEvent.Render.Background	1	client.gui.screens.Screen	batch 6: client	
+ScreenEvent.Render.Foreground	3	client.gui.screens.Screen	batch 6: client	
+ScreenEvent.RenderInventoryMobEffects	1	client.gui.screens.inventory.EffectsInInventory	batch 6: client	
+ScreenshotEvent	1	client.Screenshot	batch 6: client	
+SelectMusicEvent	1	client.sounds.MusicManager	batch 6: client	
+SubmitCustomGeometryEvent	1	client.renderer.LevelRenderer	batch 6: client	
+TagsUpdatedEvent.ClientPacketReceived	2	client.multiplayer.ClientConfigurationPacketListenerImpl	batch 6: client	
+ToastAddEvent	1	client.gui.components.toasts.ToastManager	batch 6: client	
+WindowResizeEvent	1	client.Minecraft	batch 6: client	
+AdvancementEarnEvent	1	server.PlayerAdvancements	batch1	AdvancementProgressEvent (completed=true)
+AdvancementProgressEvent	1	server.PlayerAdvancements	batch1	AdvancementProgressEvent
+AnimalTameEvent	5	world.entity.ai.goal.RunAroundLikeCrazyGoal	batch1	AnimalTameEvent
+EntityMountEvent	1	world.entity.Entity	batch1	EntityMountEvent
+EntityStruckByLightningEvent	1	world.entity.LightningBolt	batch1	EntityStruckByLightningEvent
+ExplosionEvent.Start	1	server.level.ServerLevel	batch1	ExplosionStartEvent
+ItemEntityPickupEvent.Pre	1	world.entity.item.ItemEntity	batch1	ItemPickupEvent
+ItemTossEvent	1	world.entity.player.Player	batch1	ItemTossEvent
+LivingEvent.LivingJumpEvent	5	world.entity.LivingEntity	batch1	LivingJumpEvent
+LivingExperienceDropEvent	2	world.entity.LivingEntity	batch1	LivingExperienceDropEvent
+LivingFallEvent	1	world.entity.LivingEntity	batch1	LivingFallEvent
+LivingHealEvent	1	world.entity.LivingEntity	batch1	LivingHealEvent
+LivingKnockBackEvent	1	world.entity.LivingEntity	batch1	LivingKnockBackEvent
+MobEffectEvent.Added	1	world.entity.LivingEntity	batch1	MobEffectAddedEvent
+MobEffectEvent.Applicable	1	world.entity.LivingEntity	batch1	MobEffectApplicableEvent
+MobEffectEvent.Remove	1	world.entity.LivingEntity	batch1	MobEffectRemoveEvent
+PlayerEvent.Clone	1	server.level.ServerPlayer	batch1	PlayerCloneEvent
+PlayerEvent.ItemCraftedEvent	1	world.inventory.ResultSlot	batch1	ItemCraftedEvent
+PlayerEvent.ItemSmeltedEvent	1	world.inventory.FurnaceResultSlot	batch1	ItemSmeltedEvent
+PlayerEvent.PlayerChangeGameModeEvent	1	server.level.ServerPlayer	batch1	PlayerChangeGameModeEvent
+PlayerEvent.PlayerChangedDimensionEvent	1	server.level.ServerPlayer	batch1	PlayerChangedDimensionEvent
+PlayerWakeUpEvent	1	world.entity.player.Player	batch1	PlayerWakeUpEvent
+PlayerXpEvent.PickupXp	1	world.entity.ExperienceOrb	batch1	ExperiencePickupEvent
+AnvilUpdateEvent	1	world.inventory.AnvilMenu	existing	AnvilUpdateEvent
+AttackEntityEvent	1	world.entity.player.Player	existing	EntityAttackEvent
+BlockEvent.EntityPlaceEvent	1	world.entity.monster.Enderman	existing	BlockPlaceEvent (result override)
+BreakBlockEvent	2	client.multiplayer.MultiPlayerGameMode	existing	BlockBreakEvent (cancelable)
+ChunkEvent.Load	2	client.multiplayer.ClientChunkCache	existing	ChunkLoadEvent
+ChunkEvent.Unload	2	client.multiplayer.ClientChunkCache	existing	ChunkUnloadEvent
+ClientResourceLoadFinishedEvent	1	client.Minecraft	existing	ResourceReloadEvent
+ClientTickEvent.Post	1	client.Minecraft	existing	ClientTickEvent
+ClientTickEvent.Pre	1	client.Minecraft	existing	ClientTickEvent
+EntityJoinLevelEvent	3	client.multiplayer.ClientLevel	existing	EntityJoinLevelEvent
+EntityLeaveLevelEvent	2	client.multiplayer.ClientLevel	existing	EntityRemovalEvent
+EntityRenderersEvent.RegisterLayerDefinitions	1	client.Minecraft	existing	client model-layer registry
+EntityRenderersEvent.RegisterRenderers	1	client.Minecraft	existing	client entity-renderer registry
+EntityTickEvent.Post	3	client.multiplayer.ClientLevel	existing	EntityTickEvent
+EntityTickEvent.Pre	3	client.multiplayer.ClientLevel	existing	EntityTickEvent
+ItemTooltipEvent	1	world.item.ItemStack	existing	ClientRegistry tooltip providers
+LevelEvent.Load	2	client.multiplayer.ClientLevel	existing	LevelLoadEvent
+LevelEvent.Save	1	server.level.ServerLevel	existing	LevelSaveEvent
+LevelEvent.Unload	2	client.Minecraft	existing	LevelUnloadEvent
+LevelTickEvent.Post	2	client.Minecraft	existing	LevelTickEvent
+LevelTickEvent.Pre	2	client.Minecraft	existing	LevelTickEvent
+LivingDeathEvent	3	server.level.ServerPlayer	existing	LivingEntityDeathEvent / PlayerDeathEvent
+LivingEntityUseItemEvent.Finish	1	world.entity.LivingEntity	existing	ItemUseFinishEvent
+LivingEntityUseItemEvent.Stop	1	world.entity.LivingEntity	existing	ItemReleaseEvent
+LivingIncomingDamageEvent	1	world.entity.LivingEntity	existing	EntityHurtEvent (cancelable)
+LootTableLoadEvent	1	resources.RegistryLoadTask	existing	LootTableEvent
+PlayerContainerEvent.Close	1	server.level.ServerPlayer	existing	ContainerCloseEvent / ContainerClosedEvent
+PlayerContainerEvent.Open	1	server.level.ServerPlayer	existing	ContainerOpenEvent
+PlayerEnchantItemEvent	1	world.inventory.EnchantmentMenu	existing	EnchantEvent
+PlayerEvent.PlayerLoggedInEvent	1	server.players.PlayerList	existing	PlayerLoginEvent / PlayerJoinEvent
+PlayerEvent.PlayerLoggedOutEvent	1	server.players.PlayerList	existing	PlayerLogoutEvent / PlayerLeaveEvent
+PlayerEvent.PlayerRespawnEvent	1	server.players.PlayerList	existing	PlayerRespawnEvent / PlayerRespawnActionEvent
+PlayerInteractEvent.EntityInteract	1	world.entity.player.Player	existing	EntityInteractEvent
+PlayerInteractEvent.RightClickBlock	2	client.multiplayer.MultiPlayerGameMode	existing	BlockInteractEvent
+PlayerInteractEvent.RightClickItem	2	client.multiplayer.MultiPlayerGameMode	existing	ItemUseEvent
+PlayerRespawnPositionEvent	1	server.players.PlayerList	existing	PlayerRespawnTargetEvent
+PlayerTickEvent.Post	1	world.entity.player.Player	existing	PlayerTickEvent / ClientPlayerTickEvent
+PlayerTickEvent.Pre	1	world.entity.player.Player	existing	PlayerTickEvent / ClientPlayerTickEvent
+RegisterCommandsEvent	1	commands.Commands	existing	CommandRegisterEvent
+RegisterKeyMappingsEvent	1	client.Options	existing	ClientRegistry key mappings
+RenderHandEvent	1	client.renderer.FirstPersonHandsAndItemsRenderer	existing	client hand registry
+ScreenEvent.Closing	1	client.gui.Gui	existing	ScreenCloseEvent
+ServerTickEvent.Post	1	server.MinecraftServer	existing	ServerTickEvent
+ServerTickEvent.Pre	1	server.MinecraftServer	existing	ServerTickEvent
+ViewportEvent.ComputeCameraAngles	1	client.Camera	existing	client camera registry
+ViewportEvent.ComputeFogColor	1	client.renderer.fog.FogRenderer	existing	client fog registry
+ViewportEvent.ComputeFov	1	client.Camera	existing	client FOV registry
+ViewportEvent.RenderFog	1	client.renderer.fog.FogRenderer	existing	client fog registry
+EntityTeleportEvent.TeleportCommand	1	server.commands.TeleportCommand	partial	PlayerTeleportEvent (players only)

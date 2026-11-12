@@ -1,0 +1,13 @@
+diff --git a/net/minecraft/world/item/ItemStack.java b/net/minecraft/world/item/ItemStack.java
+index 5bcee92..978fd74 100644
+--- a/net/minecraft/world/item/ItemStack.java
++++ b/net/minecraft/world/item/ItemStack.java
+@@ -1147,4 +1147,8 @@ public final class ItemStack implements DataComponentHolder, ItemInstance {
+          .or(() -> Optional.ofNullable(this.getItem().getItemDamageSource(attacker)))
+          .orElseGet(attacker::createDamageSource);
+    }
++
++   public String weaver$sourcePatchProbe() {
++      return "source:" + this.getItem() + "x" + this.getCount();
++   }
+ }

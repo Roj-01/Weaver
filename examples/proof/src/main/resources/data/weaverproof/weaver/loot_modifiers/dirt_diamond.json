@@ -1,0 +1,12 @@
+{
+  "type": "weaver:add_items",
+  "tables": [
+    "minecraft:blocks/dirt"
+  ],
+  "items": [
+    {
+      "id": "minecraft:diamond",
+      "count": 2
+    }
+  ]
+}

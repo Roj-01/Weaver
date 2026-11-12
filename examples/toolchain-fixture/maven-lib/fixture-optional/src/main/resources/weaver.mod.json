@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "fixture-optional",
+  "name": "Fixture Optional",
+  "version": "1.0.0",
+  "mainClass": "com.weaver.fixture.optional.OptionalAddon",
+  "minecraft": "26.3",
+  "side": "server"
+}

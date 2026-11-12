@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "id": "weaverclientproof",
+  "name": "Weaver Client Proof",
+  "version": "1.0.0",
+  "description": "Proves the Weaver client APIs in a real client.",
+  "authors": ["aosking999", {"name": "Weaver contributors"}],
+  "license": "LGPL-2.1-only",
+  "contact": {"homepage": "https://github.com/albeet22/WEAVER"},
+  "mainClass": "net.weaver.clientproof.ClientProofMod",
+  "minecraft": "26.3",
+  "side": "both",
+  "mixins": [
+    "client-proof.mixins.json"
+  ]
+}

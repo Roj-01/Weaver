@@ -1,0 +1,6 @@
+{
+  "values": [
+    "weaverproof:ruby",
+    {"id": "weaverproof:sapphire", "required": true}
+  ]
+}

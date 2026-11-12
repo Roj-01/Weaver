@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#c:tools/shear",
+    "#c:tools/bow",
+    "#c:tools/crossbow",
+    "#c:tools/fishing_rod",
+    "#c:tools/shield",
+    "#c:tools/trident",
+    "#c:tools/mace",
+    "#c:tools/brush",
+    "#c:tools/spyglass"
+  ]
+}

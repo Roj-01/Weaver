@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.weaver.proof.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MegaMixin"
+  ]
+}

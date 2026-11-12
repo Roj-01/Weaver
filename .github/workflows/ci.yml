@@ -1,0 +1,74 @@
+name: CI
+
+# Builds and tests Weaver without Minecraft game files, which cannot be
+# redistributed. This is gate step B (no-game build) plus the standalone
+# Gradle plugin build, on Linux and Windows. The game proofs (steps H-L of
+# tools/verify-ci.ps1) still need a local work/game-26.3 and run on a dev machine.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '26'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Make the wrapper executable
+        if: runner.os != 'Windows'
+        run: chmod +x gradlew
+
+      - name: Build and test (no game classpath)
+        shell: bash
+        run: |
+          set -o pipefail
+          ./gradlew build -Pweaver.forceNoGameApi=true --console=plain 2>&1 | tee build.gradle.log
+
+      - name: Check the api-game skip was reported
+        shell: bash
+        run: |
+          ./gradlew :api-game:build -Pweaver.forceNoGameApi=true --console=plain | tee api-game.log
+          grep -q 'api-game SKIPPED reason=no-game-classpath' api-game.log
+
+      - name: Build the standalone Gradle plugin
+        shell: bash
+        run: |
+          set -o pipefail
+          ./gradlew -p tools/gradle-plugin build --console=plain 2>&1 | tee plugin.gradle.log
+
+      - name: Annotate failures
+        if: failure()
+        shell: bash
+        run: python3 .github/scripts/annotate-failures.py || python .github/scripts/annotate-failures.py
+
+      - name: Upload test reports
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports-${{ matrix.os }}
+          path: |
+            **/build/reports/tests/
+            **/build/test-results/
+          retention-days: 7

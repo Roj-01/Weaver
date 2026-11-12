@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "fixture-transitive",
+  "name": "Fixture Transitive",
+  "version": "1.0.0",
+  "mainClass": "com.weaver.fixture.transitive.Transitive",
+  "minecraft": "26.3",
+  "side": "server"
+}

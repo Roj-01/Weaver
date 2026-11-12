@@ -1,0 +1,15 @@
+.gradle/
+build/
+out/
+work/
+logs/
+run/
+# The Gradle plugin has a source package named run.
+!tools/gradle-plugin/src/main/java/net/weaver/gradle/run/
+*.log
+*.tmp
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db

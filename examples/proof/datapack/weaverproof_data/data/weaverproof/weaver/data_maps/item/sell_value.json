@@ -1,0 +1,9 @@
+{
+  "values": {
+    "minecraft:diamond": 250
+  },
+  "remove": [
+    "minecraft:stick",
+    "minecraft:birch_log"
+  ]
+}

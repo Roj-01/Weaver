@@ -1,0 +1,6 @@
+{
+  "type": "weaver:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "weaverproof:proof_noop",
+  "step": "vegetal_decoration"
+}

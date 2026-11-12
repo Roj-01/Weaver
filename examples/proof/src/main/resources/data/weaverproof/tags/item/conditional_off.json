@@ -1,0 +1,4 @@
+{
+  "weaver:conditions": [{"type": "weaver:false"}],
+  "values": ["minecraft:diamond"]
+}

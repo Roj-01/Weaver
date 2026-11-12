@@ -1,0 +1,4 @@
+{
+  "loader": "weaverclientproof:test",
+  "textures": { "all": "minecraft:block/gold_block", "particle": "minecraft:block/gold_block" }
+}

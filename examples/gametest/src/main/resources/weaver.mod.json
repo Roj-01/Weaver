@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "weavergametest",
+  "name": "Weaver Game Test Example",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.gametestexample.GameTestExampleMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

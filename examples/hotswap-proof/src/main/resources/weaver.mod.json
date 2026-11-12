@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "hotswapproof",
+  "name": "Hot Swap Proof",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.hotswapproof.HotSwapProofMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

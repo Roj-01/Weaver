@@ -1,0 +1,12 @@
+Weaver
+Copyright 2026 Abdullah Haitham Al-Nuaimi
+
+Licensed under the GNU Lesser General Public License v2.1 (LGPL-2.1-only).
+The full text is in LICENSE. See README-LICENSE.md for licensing details.
+
+This product includes third-party software. The libraries, their licenses,
+and their upstream projects are listed in THIRD-PARTY.txt.
+
+Minecraft is not included. get-game.ps1 downloads it from Mojang's servers,
+and using it is subject to the Minecraft EULA
+(https://www.minecraft.net/eula).

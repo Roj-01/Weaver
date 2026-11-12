@@ -1,0 +1,6 @@
+{
+  "weaver:conditions": [{"type": "weaver:item_exists", "item": "weaverproof:proof_item"}],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": ["minecraft:diamond", "minecraft:diamond"],
+  "result": {"count": 1, "id": "minecraft:emerald"}
+}

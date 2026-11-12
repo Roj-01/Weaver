@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "net.weaver.api.game.network.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "ClientboundCustomPayloadPacketMixin",
+    "ConnectionMixin",
+    "PlayerListMixin",
+    "ServerCommonPacketListenerAccessor",
+    "ServerCommonPacketListenerMixin",
+    "ServerGamePacketListenerMixin",
+    "ServerboundCustomPayloadPacketMixin"
+  ],
+  "client": [
+    "ClientCommonPacketListenerMixin",
+    "ClientHandshakePacketListenerMixin",
+    "ClientPacketListenerMixin"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "weaver:add_items",
+  "enabled": false,
+  "tables": [
+    "minecraft:blocks/dirt"
+  ],
+  "items": [
+    {
+      "id": "minecraft:gold_ingot"
+    }
+  ]
+}

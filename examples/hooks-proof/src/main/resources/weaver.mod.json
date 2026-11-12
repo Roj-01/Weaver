@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "weaverhooksproof",
+  "name": "Weaver Hooks Proof",
+  "version": "1.0.0",
+  "mainClass": "net.weaver.hooksproof.HooksProofMod",
+  "minecraft": "26.3",
+  "side": "both"
+}

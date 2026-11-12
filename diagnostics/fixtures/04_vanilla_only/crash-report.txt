@@ -1,0 +1,31 @@
+---- Minecraft Crash Report ----
+
+// This doesn't make any sense!
+
+Time: 2026-10-17 17:05:33
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.level.block.state.BlockState.isAir()" because "this.state" is null
+	at net.minecraft.world.level.block.Block.shouldRenderFace(Block.java:412)
+	at net.minecraft.client.renderer.chunk.RenderChunk.rebuild(RenderChunk.java:188)
+	at net.minecraft.client.renderer.LevelRenderer.renderChunkLayer(LevelRenderer.java:902)
+	at net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:781)
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:790)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1140)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:806)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.world.level.block.Block.shouldRenderFace(Block.java:412)
+
+-- System Details --
+Details:
+	Minecraft Version: 26.3
+	Fabric Loader: 0.17.1
+
+-- Mods --
+	Mod List:
+		fabric-api 0.140.2+26.3

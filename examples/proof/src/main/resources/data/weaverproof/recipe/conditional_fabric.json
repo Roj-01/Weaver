@@ -1,0 +1,6 @@
+{
+  "fabric:load_conditions": [{"condition": "fabric:all_mods_loaded", "values": ["weaverproof", "nonexistentmod"]}],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": ["minecraft:diamond", "minecraft:diamond"],
+  "result": {"count": 1, "id": "minecraft:emerald"}
+}

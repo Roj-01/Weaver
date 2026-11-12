@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "package": "net.weaver.clientproof.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "HudMixin",
+    "ScreenMixin"
+  ]
+}

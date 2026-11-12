@@ -1,0 +1,1 @@
+{ "type": "weaver:remove_spawns", "structures": "minecraft:monument", "entities": "minecraft:guardian" }

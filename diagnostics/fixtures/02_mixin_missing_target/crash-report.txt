@@ -1,0 +1,41 @@
+---- Minecraft Crash Report ----
+
+// Uh oh
+
+Time: 2026-10-17 15:10:44
+Description: Initializing game
+
+org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin apply for mod healthbar failed healthbar.mixins.json:MixinGuiInGame -> net.minecraft.client.gui.Gui: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on healthbar$onRender could not find any targets matching 'method_1016' in net.minecraft.client.gui.Gui. Using refmap healthbar-refmap.json [PREINJECT Applicator Phase -> healthbar.mixins.json:MixinGuiInGame -> Prepare Injections]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:332)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:238)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.select(MixinApplicatorStandard.java:157)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:257)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:263)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:211)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:157)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:138)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:597)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on healthbar$onRender could not find any targets matching 'method_1016' in net.minecraft.client.gui.Gui. Using refmap healthbar-refmap.json
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.validateTargets(InjectionInfo.java:568)
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.findMethods(InjectionInfo.java:478)
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:441)
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1391)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1051)
+	... 7 more
+
+-- Mixins --
+	Loaded: zoom.mixins.json:MixinGameRenderer from mod zoom
+	Failed: healthbar.mixins.json:MixinGuiInGame — target method_1016 not found in net.minecraft.client.gui.Gui
+	Refmap: healthbar-refmap.json
+
+-- System Details --
+Details:
+	Minecraft Version: 26.3
+	NeoForge: 26.3.0-beta.5
+	Java Version: 26.0.1
+
+-- Mods --
+	Mod List:
+		healthbar 1.4.2
+		zoom 2.1.0

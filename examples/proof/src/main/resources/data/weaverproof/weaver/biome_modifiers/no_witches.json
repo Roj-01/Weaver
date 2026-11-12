@@ -1,0 +1,8 @@
+{
+  "type": "weaver:remove_spawns",
+  "biomes": "#minecraft:is_overworld",
+  "entities": "minecraft:witch",
+  "categories": [
+    "monster"
+  ]
+}

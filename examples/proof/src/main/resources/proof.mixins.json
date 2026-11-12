@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.weaver.proof.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "BlockMixin"
+  ]
+}

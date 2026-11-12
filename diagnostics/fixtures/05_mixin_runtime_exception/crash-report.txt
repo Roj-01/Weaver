@@ -1,0 +1,27 @@
+---- Minecraft Crash Report ----
+
+// Uh oh
+
+Time: 2026-10-17 17:44:10
+Description: Rendering level
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.phys.Vec3.scale(double)" because the return value of "com.example.zoomplus.mixin.CameraMixin.zoomplus$getFocusPoint()" is null
+	at com.example.zoomplus.mixin.CameraMixin.zoomplus$onUpdate(CameraMixin.java:55)
+	at net.minecraft.client.Camera.setup(Camera.java:312)
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:790)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1140)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:806)
+	at net.minecraft.client.main.Main.main(Main.java:250)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Mixins --
+	zoomplus.mixins.json:CameraMixin -> net.minecraft.client.Camera (applied)
+
+-- System Details --
+Details:
+	Minecraft Version: 26.3
+	NeoForge: 26.3.0-beta.5
+
+-- Mods --
+	Mod List:
+		zoomplus 1.2.3

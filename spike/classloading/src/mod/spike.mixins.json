@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "net.example.mod",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "GameTargetMixin"
+  ]
+}

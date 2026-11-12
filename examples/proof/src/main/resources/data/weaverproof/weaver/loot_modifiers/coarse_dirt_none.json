@@ -1,0 +1,7 @@
+{
+  "type": "weaver:remove_items",
+  "tables": [
+    "minecraft:blocks/coarse_dirt"
+  ],
+  "items": "#minecraft:dirt"
+}
